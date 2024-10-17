@@ -7,7 +7,7 @@ $array = array(
 
 function premierElementTableau($array){
     return $array[0];
-    if ($array == 0){
+    if ($array == null){
         return null;
     }
 }
