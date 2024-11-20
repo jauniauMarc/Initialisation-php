@@ -92,27 +92,24 @@ body {
 
 /* Champs de saisie valides */
 .isvalid {
-    border-color: #28a745; /* Bordure verte pour indiquer la validité */
-    background-color: #d4edda; /* Fond légèrement vert pour signaler la validité */
-    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3); /* Ombre douce pour l'effet de validation */
+    border-color: #28a745;
+    border-width: 2px; 
+    background-color: #d4edda; 
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3); 
 }
 
 /* Champs de saisie invalides */
 .isinvalid {
-    border-color: #dc3545; /* Bordure rouge pour indiquer l'invalidité */
-    background-color: #f8d7da; /* Fond légèrement rouge pour signaler l'erreur */
-    box-shadow: 0 0 5px rgba(220, 53, 69, 0.3); /* Ombre douce pour l'effet d'erreur */
+    border-color: #dc3545; 
+    border-width: 2px; 
+    background-color: #f8d7da; 
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.3); 
 }
 
-/* Message d'erreur */
-.isinvalid ~ .text-danger {
-    display: block; /* Affiche le message d'erreur lorsque le champ est invalide */
-    color: #dc3545; /* Rouge pour l'erreur */
-    font-size: 12px;
-    margin-top: 5px;
+.textvalid{
+    color : #28a745;
 }
 
-/* Masquer les messages d'erreur si le champ est valide */
-.isvalid ~ .text-danger {
-    display: none;
+.textinvalid{
+    color : #dc3545; 
 }
