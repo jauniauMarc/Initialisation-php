@@ -1,5 +1,3 @@
-const { parseJSON } = require("jquery");
-
 function verifierFormulaire() {
   let nom = document.getElementById("nom");
   let prenom = document.getElementById("prenom");
@@ -13,11 +11,13 @@ function verifierFormulaire() {
   if (motDePasse.value.length < 8) {
     motDePasse.classList.add('isinvalid');
     motDePasse.classList.remove('isvalid');
-    Mmdp.classList.remove('invisible')
+    Mdp.classList.remove('invisible')
+    Mdp.classList.add('visible')
   } else {
     motDePasse.classList.remove('isinvalid');
     motDePasse.classList.add('isvalid');
-    Mmdp.classList.add('invisible')
+    Mdp.classList.add('invisible')
+    Mdp.classList.remove('visible')
   }
 
   // email

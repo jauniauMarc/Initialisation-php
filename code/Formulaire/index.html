@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>tpTest Javascript</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+</head>
+
+<body> 
+    <div class="contact-clean">
+<!-- Méthode POST utilisée pour envoyer les données au fichier traitement.php --> 
+        <form method="post" action="traitement.php">
+            <h2 class="text-center">sign up&nbsp;&nbsp;</h2>
+            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name" id="nom"></div>
+            <div class="form-group"><input class="form-control" type="text" name="prénom" placeholder="First name" id="prenom"></div>
+            <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" id="email"></div>
+            <div class="form-group"><input class="form-control" type="password" name="password" placeholder="password" id="motdepasse">
+              <small class="text-danger invisible" id="Mdp">Veuillez enter un mot de pass de longueur minimum 8 caractères</small>
+            </div>
+            <div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14" id="message"></textarea></div>
+            <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="caseCoche">
+                    <label class="form-check-label" for="formCheck-1">I am of age</label>
+                </div>
+                <button class="btn btn-primary" type="submit">send </button>
+                <!--submit-->
+            </div>
+        </form>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/myscript.js"></script>
+</body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-clean {
+        width: 100%;
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-clean h2 {
+        font-size: 26px;
+        color: #4a4a4a;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        transition: all 0.3s ease;
+    }
+
+    .form-control:focus {
+        border-color: #007bff;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    .text-danger {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 12px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+    }
+
+    .form-check-input {
+        margin-top: 7px;
+    }
+
+    .form-check-label {
+        font-size: 14px;
+        color: #4a4a4a;
+    }
+
+    @media (max-width: 576px) {
+        .contact-clean {
+            padding: 20px;
+        }
+        .form-control {
+            font-size: 14px;
+        }
+        .btn-primary {
+            padding: 10px;
+        }
+    }
+
+    .isinvalid {
+    border-color: #dc3545; 
+    border-width: 2px; 
+    background-color: #f8d7da; 
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.3); 
+}
+
+.isvalid {
+    border-color: #28a745; 
+    border-width: 2px; 
+    background-color: #d4edda; 
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3); 
+}
+
+.invisible {
+    display: none;
+}
+
+.textvalid{
+    color : #28a745;
+}
+
+.textinvalid{
+    color : #dc3545; 
+}
+
+.visible{
+    color: red;
+}
+
+</style>
+
+</html>
